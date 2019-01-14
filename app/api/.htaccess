@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^([^/]+)/?$ ../routes.php?container=$1 [L,QSA]
+RewriteRule ^([^/]+)/([^/]+)/?$ ../routes.php?container=$1&method=$2 [L,QSA]
+
